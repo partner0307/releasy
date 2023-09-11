@@ -5,7 +5,7 @@ import { Main } from 'layouts';
 import Image from 'next/image';
 import React from 'react';
 
-import FreelancersImage from 'images/developers.jpg';
+import FreelancersImage from 'images/use-case/developers.jpg';
 
 const Freelancers = () => {
     const theme = useTheme();

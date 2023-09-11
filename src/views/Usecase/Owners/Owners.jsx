@@ -5,7 +5,7 @@ import { Main } from 'layouts';
 import Image from 'next/image';
 import React from 'react';
 
-import OwnersImage from 'images/project-owners.jpg';
+import OwnersImage from 'images/use-case/project-owners.jpg';
 
 const Owners = () => {
     const theme = useTheme();

@@ -4,9 +4,9 @@ import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 import Image from 'next/image';
 
-import SimplicityDesign from 'images/simplicity-design.png';
-import ValidateFeature from 'images/validate-feature.png';
-import BattleTested from 'images/battle-tested.png';
+import SimplicityDesign from 'images/landing/discover/simplicity-design.png';
+import ValidateFeature from 'images/landing/discover/validate-feature.png';
+import BattleTested from 'images/landing/discover/battle-tested.png';
 import { Button } from '@mui/material';
 
 const Discover = () => {

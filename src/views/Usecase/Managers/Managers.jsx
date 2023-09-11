@@ -5,7 +5,7 @@ import { Main } from 'layouts';
 import Image from 'next/image';
 import React from 'react';
 
-import ManagersImage from 'images/project-managers.jpg';
+import ManagersImage from 'images/use-case/project-managers.jpg';
 
 const Managers = () => {
     const theme = useTheme();
