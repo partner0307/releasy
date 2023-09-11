@@ -3,6 +3,10 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 import Image from 'next/image';
+
+import SimplicityDesign from 'images/landing/discover/simplicity-design.png';
+import ValidateFeature from 'images/landing/discover/validate-feature.png';
+import BattleTested from 'images/landing/discover/battle-tested.png';
 import { Button } from '@mui/material';
 
 const Discover = () => {
@@ -40,15 +44,16 @@ const Discover = () => {
       <Box
         display={'flex'}
         flexDirection={'column'}
-        gap={theme.spacing(7)}
+        gap={theme.spacing(5)}
+        maxWidth={1200}
+        margin={'auto'}
       >
         <Box
           display={'flex'}
           flexDirection={{ md: 'row', sm: 'column', xs: 'column' }}
           justifyContent={'space-between'}
           alignItems={'center'}
-          height={theme.spacing(28.125)}
-          gap={{ md: theme.spacing(10), sm: theme.spacing(5), xs: theme.spacing(2) }}
+          gap={{ md: theme.spacing(5), sm: theme.spacing(5), xs: theme.spacing(2) }}
         >
           <Box
             display={'flex'}
@@ -68,34 +73,31 @@ const Discover = () => {
           </Box>
           <Box
             padding={theme.spacing(1, 1.375)}
-            width={{ lg: '40%', md: '50%', sm: '80%' }}
-            height={{ lg: '80%', md: '90%', sm: '100%' }}
+            width={{ lg: '50%', md: '50%', sm: '80%' }}
             sx={{
               boxShadow: '0px 18px 40px 0px rgba(188, 188, 188, 0.25)',
               borderRadius: theme.spacing(0.5)
             }}
           >
-              <Image src={'https://releasyapp-crm.s3.amazonaws.com/public/images/simplicity-design.png'} width={'100%'} height={'100%'} />
+              <Image src={SimplicityDesign} />
           </Box>
         </Box>
         <Box
           display={'flex'}
-          flexDirection={{ md: 'row', sm: 'column', xs: 'column' }}
+          flexDirection={{ md: 'row', sm: 'column-reverse', xs: 'column-reverse' }}
           justifyContent={'space-between'}
           alignItems={'center'}
-          height={theme.spacing(28.125)}
-          gap={{ md: theme.spacing(10), sm: theme.spacing(5), xs: theme.spacing(2) }}
+          gap={{ md: theme.spacing(5), sm: theme.spacing(5), xs: theme.spacing(2) }}
         >
           <Box
             padding={theme.spacing(1, 1.375)}
-            width={{ lg: '40%', md: '50%', sm: '80%' }}
-            height={{ lg: '80%', md: '90%', sm: '100%' }}
+            width={{ lg: '50%', md: '50%', sm: '80%' }}
             sx={{
               boxShadow: '0px 18px 40px 0px rgba(188, 188, 188, 0.25)',
               borderRadius: theme.spacing(0.5)
             }}
           >
-              <Image src={'https://releasyapp-crm.s3.amazonaws.com/public/images/validate-feature.png'} width={'100%'} height={'100%'} />
+              <Image src={ValidateFeature} />
           </Box>
           <Box
             display={'flex'}
@@ -119,8 +121,7 @@ const Discover = () => {
           flexDirection={{ md: 'row', sm: 'column', xs: 'column' }}
           justifyContent={'space-between'}
           alignItems={'center'}
-          height={theme.spacing(28.125)}
-          gap={{ md: theme.spacing(10), sm: theme.spacing(5), xs: theme.spacing(2) }}
+          gap={{ md: theme.spacing(5), sm: theme.spacing(5), xs: theme.spacing(2) }}
         >
           <Box
             display={'flex'}
@@ -140,14 +141,14 @@ const Discover = () => {
           </Box>
           <Box
             padding={theme.spacing(1, 1.375)}
-            width={{ lg: '40%', md: '50%', sm: '80%' }}
+            width={{ lg: '50%', md: '50%', sm: '80%' }}
             height={{ lg: '80%', md: '90%', sm: '100%' }}
             sx={{
               boxShadow: '0px 18px 40px 0px rgba(188, 188, 188, 0.25)',
               borderRadius: theme.spacing(0.5)
             }}
           >
-              <Image src={'https://releasyapp-crm.s3.amazonaws.com/public/images/battle-tested.png'} width={'100%'} height={'100%'} />
+              <Image src={BattleTested} />
           </Box>
         </Box>
       </Box>

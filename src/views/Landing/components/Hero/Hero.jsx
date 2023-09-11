@@ -118,7 +118,7 @@ const Hero = () => {
             </Button>
           </Box>
 
-          <Box align={'center'} position={'relative'} overflow={'hidden'} mt={5}>
+          <Box align={'center'} position={'relative'} overflow={'hidden'} maxWidth={1200} mt={5} mx={'auto'}>
             <div
               style={{
                 position: 'relative',

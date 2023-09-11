@@ -4,6 +4,10 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Image from 'next/image';
+import ClientImage from 'images/landing/service/non-technical.png';
+import DesignImage from 'images/landing/service/designed-easy.png';
+import ApprovalImage from 'images/landing/service/trust-approval.png';
+import AgileImage from 'images/landing/service/agile-principle.png';
 
 const mock = [
   {
@@ -12,7 +16,7 @@ const mock = [
       'Too often, clients fail to properly test a release and sometimes approve releases without even seeing them. Releasy allows you to clearly define what to test, how to test it and the acceptance criteria.',
     image: (
       <>
-        <Image src={'https://releasyapp-crm.s3.amazonaws.com/public/images/landing/service/non-technical.png'} width={'100%'} height={'100%'} />
+        <Image src={ClientImage} style={{ width: '100%', height: '100%' }} />
       </>
     ),
   },
@@ -21,7 +25,7 @@ const mock = [
     subtitle:
       "Releasy is designed to make your client's life easier during user acceptance testing. Approval and rejection of releases is possible with just one click.",
     image: (
-      <Image src={'https://releasyapp-crm.s3.amazonaws.com/public/images/landing/service/designed-easy.png'} width={'100%'} height={'100%'} />
+      <Image src={DesignImage} style={{ width: '100%', height: '100%' }} />
     ),
   },
   {
@@ -30,7 +34,7 @@ const mock = [
       'Once a release is tested, Releasy generates a PDF document which serves as validation proof of testing and acceptance for both parties.',
     image: (
       <>
-        <Image src={'https://releasyapp-crm.s3.amazonaws.com/public/images/landing/service/trust-approval.png'} width={'100%'} height={'100%'} />
+        <Image src={ApprovalImage} style={{ width: '100%', height: '100% !important' }} />
       </>
     ),
   },
@@ -40,7 +44,7 @@ const mock = [
       "Continuously refine the testing process in alignment with your Sprint schedule, persisting until the client's complete satisfaction is achieved.",
     image: (
       <>
-        <Image src={'https://releasyapp-crm.s3.amazonaws.com/public/images/landing/service/agile-principle.png'} width={'100%'} height={'100%'} />
+        <Image src={AgileImage} style={{ width: '100%', height: '100%' }} />
       </>
     ),
   },
