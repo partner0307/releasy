@@ -1,9 +1,9 @@
-import { Box, Button, Typography, useTheme } from '@mui/material';
+import { Box, Button, Grid, ListItem, ListItemText, Typography, useTheme } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import React from 'react';
 
-const Card = ({ list, price, step }) => {
+const Card = ({ item, step }) => {
     const theme = useTheme();
 
     return (
@@ -21,27 +21,45 @@ const Card = ({ list, price, step }) => {
                 display={'flex'}
                 justifyContent={'center'}
             >
-                <Typography variant='h4' sx={{ color: '#A3A3A3' }}>{step === 0 ? 'Essential' : step === 1 ? 'Extra' : 'Premium'}</Typography>
+                <Typography variant='h4' sx={{ color: '#A3A3A3' }}>{item.title}</Typography>
             </Box>
             <Box
                 display={'flex'}
                 flexDirection={'column'}
                 gap={theme.spacing(3)}
             >
-                <Typography variant='h1' component={'div'} color={step === 1 ? theme.palette.secondary.main : theme.palette.common.black}>{price}<Typography variant='subtitle1' component={'span'}>/month</Typography></Typography>
+                <Box
+                    display={'flex'}
+                    alignItems={'baseline'}
+                >
+                    <Typography variant='h1' component={'h1'} color={step === 1 ? theme.palette.secondary.main : theme.palette.common.black}>{item.price}</Typography>
+                    <Typography variant='subtitle1' component={'span'}>{item.priceDetail}</Typography>
+                </Box>
                 <Box
                     display={'flex'}
                     flexDirection={'column'}
                     gap={theme.spacing(1)}
                 >
-                    {list.map((item, index) => (
+                    {item.features.map((features, index) => (
                         <Box
-                            display={'flex'}
-                            alignItems={'center'}
-                            gap={theme.spacing(0.5)}
+                            component={ListItem}
+                            disableGutters
+                            width={'auto'}
+                            padding={0}
                         >
-                            {((step === 0 && index>4) || (step === 1 && index>7)) ? <RemoveCircleOutlineIcon sx={{ color: theme.palette.danger.main }} /> : <CheckCircleIcon sx={{ color: theme.palette.success.main }} />}
-                            <Typography variant='body1'>{item}</Typography>
+                            <CheckCircleIcon sx={{ color: theme.palette.success.main }} />
+                            <ListItemText primary={features} />
+                        </Box>
+                    ))}
+                    {item.excluded.map((features, index) => (
+                        <Box
+                            component={ListItem}
+                            disableGutters
+                            width={'auto'}
+                            padding={0}
+                        >
+                            <RemoveCircleOutlineIcon sx={{ color: theme.palette.danger.main }} />
+                            <ListItemText primary={features} />
                         </Box>
                     ))}
                 </Box>

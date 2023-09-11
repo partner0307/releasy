@@ -33,11 +33,12 @@ const Step = ({ title, subtitle, list, image, index }) => {
                     flexDirection={'column'}
                     gap={theme.spacing(1)}
                 >
-                    {list.map(p => (
+                    {list.map((p, i) => (
                         <Box
                             display={'flex'}
                             alignItems={'center'}
                             gap={theme.spacing(0.5)}
+                            key={i}
                         >
                             <CheckCircleIcon sx={{ color: theme.palette.success.main, fontSize: theme.spacing(1.25) }} />
                             <Typography variant='caption'>{p}</Typography>

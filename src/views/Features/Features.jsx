@@ -1,3 +1,5 @@
+import Head from 'next/head';
+import { Main } from 'layouts';
 import { Box, Button, Typography, useTheme } from '@mui/material';
 import Container from 'components/layout/Container';
 import React from 'react';
@@ -10,7 +12,6 @@ import Step4 from 'images/features/4.png';
 import Step5 from 'images/features/5.png';
 import Step6 from 'images/features/6.png';
 import Step7 from 'images/features/7.png';
-import { Main } from 'layouts';
 
 const steps = [
     {
@@ -95,61 +96,84 @@ const Features = () => {
     const theme = useTheme();
     const loginUrl = process.env.NEXT_PUBLIC_RELEASY_LOGIN_URL;
 
+    const title = `Releasy features: user acceptance testing built for non technical clients`;
+    const description =
+        "Releasy simplifies project delivery by allowing your client to actively validate your releases. It's designed for tests that cannot be automated.";
+
     return (
-        <Main>
-            <Container>
-                <Box
-                    padding={theme.spacing(0, 0, 12)}
-                >
+        <>
+            <Head>
+                <title>{title}</title>
+                <meta name="description" content={description} key="description" />
+                <meta property="og:title" content={title} key="ogtitle" />
+                <meta
+                    property="og:description"
+                    content={description}
+                    key="ogdescription"
+                />
+                <meta
+                    property="og:url"
+                    content={`https://www.releasyapp.io/features`}
+                    key="ogurl"
+                />
+                <link rel="canonical" href={`https://www.releasyapp.io/features`} />
+            </Head>
+            <Main>
+                <Container>
                     <Box
-                        display={'flex'}
-                        flexDirection={'column'}
-                        gap={theme.spacing(0.75)}
+                        padding={theme.spacing(0, 0, 12)}
                     >
-                        <Typography variant='h1' align='center'>Easy Delivery Project</Typography>
-                        <Typography variant='body' align='center'>Releasy simplifies client collaboration and approvals for non-automated tests with time constraints.</Typography>
-                    </Box>
-                    <Box
-                        display={'flex'}
-                        flexDirection={'column'}
-                        gap={theme.spacing(3)}
-                        mt={theme.spacing(3.5)}
-                        maxWidth={1200}
-                        mx={'auto'}
-                    >
-                        {steps.map((p, i) => (
-                            <Step
-                                title={p.title}
-                                subtitle={p.subtitle}
-                                list={p.list}
-                                image={p.image}
-                                index={i}
-                            />
-                        ))}
-                    </Box>
-                    <Box
-                        display={'flex'}
-                        justifyContent={'center'}
-                        mt={theme.spacing(5.25)}
-                    >
-                        <Button
-                            variant="contained"
-                            color="primary"
-                            component="a"
-                            target="_blank"
-                            href={loginUrl}
-                            size="large"
-                            style={{
-                                boxShadow: '0px 10px 30px 0px rgba(68, 68, 68, 0.25)',
-                                padding: theme.spacing(1, 5.5)
-                            }}
+                        <Box
+                            display={'flex'}
+                            flexDirection={'column'}
+                            gap={theme.spacing(0.75)}
                         >
-                            Get Started
-                        </Button>
+                            <Typography variant='h1' align='center'>Easy Delivery Project</Typography>
+                            <Typography variant='body' align='center'>Releasy simplifies client collaboration and approvals for non-automated tests with time constraints.</Typography>
+                        </Box>
+                        <Box
+                            display={'flex'}
+                            flexDirection={'column'}
+                            gap={theme.spacing(3)}
+                            mt={theme.spacing(3.5)}
+                            maxWidth={1200}
+                            mx={'auto'}
+                        >
+                            {steps.map((p, i) => (
+                                <Step
+                                    title={p.title}
+                                    subtitle={p.subtitle}
+                                    list={p.list}
+                                    image={p.image}
+                                    index={i}
+                                    key={i}
+                                />
+                            ))}
+                        </Box>
+                        <Box
+                            display={'flex'}
+                            justifyContent={'center'}
+                            mt={theme.spacing(5.25)}
+                        >
+                            <Button
+                                variant="contained"
+                                color="primary"
+                                component="a"
+                                target="_blank"
+                                href={loginUrl}
+                                size="large"
+                                style={{
+                                    boxShadow: '0px 10px 30px 0px rgba(68, 68, 68, 0.25)',
+                                    padding: theme.spacing(1, 5.5)
+                                }}
+                            >
+                                Get Started
+                            </Button>
+                        </Box>
                     </Box>
-                </Box>
-            </Container>
-        </Main>
+                </Container>
+            </Main>
+        </>
     )
 }
 
