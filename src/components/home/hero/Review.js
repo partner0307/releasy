@@ -1,7 +1,6 @@
 import { Avatar, Box, Rating, Typography, useTheme } from '@mui/material';
 import Image from 'next/image';
 import React from 'react';
-import AvatarImage from 'images/avatar.png';
 
 const Review = () => {
     const theme = useTheme();
@@ -36,7 +35,7 @@ const Review = () => {
                         height={theme.spacing(2.5)}
                     >
                         <Avatar>
-                            <Image src={AvatarImage} style={{ borderRadius: '50%' }} />
+                            <Image src={'https://releasyapp-crm.s3.amazonaws.com/public/images/avatar.png'} width={'100%'} height={'100%'} style={{ borderRadius: '50%' }} />
                         </Avatar>
                     </Box>
                     <Box

@@ -2,14 +2,6 @@ import { Box, Button, Typography, useTheme } from '@mui/material';
 import Container from 'components/layout/Container';
 import React from 'react';
 import { Step } from './components';
-
-import Step1 from 'images/features/1.png';
-import Step2 from 'images/features/2.png';
-import Step3 from 'images/features/3.png';
-import Step4 from 'images/features/4.png';
-import Step5 from 'images/features/5.png';
-import Step6 from 'images/features/6.png';
-import Step7 from 'images/features/7.png';
 import { Main } from 'layouts';
 
 const steps = [
@@ -21,7 +13,7 @@ const steps = [
             'Filling in required information creates a robust displayed in the final testing summary PDF.',
             "The number of releases that can be added varies on your subscription type: be sure to check out the plan that's best for your company's needs!"
         ],
-        image: Step1
+        image: 'https://releasyapp-crm.s3.amazonaws.com/public/images/features/1.png'
     },
     {
         title: 'Define Releases',
@@ -32,7 +24,7 @@ const steps = [
             "Cloning old releases can allow for the creation of new versions for approval.",
             "Each tested release, whether approved or declined, will produce a document shared between you and your client."
         ],
-        image: Step2
+        image: 'https://releasyapp-crm.s3.amazonaws.com/public/images/features/2.png'
     },
     {
         title: 'Add features / user stories',
@@ -44,7 +36,7 @@ const steps = [
             "You can also attach files to your features or link to external ones.",
             "Add a detailed step-by-step guide to help your clients through the testing process."
         ],
-        image: Step3
+        image: 'https://releasyapp-crm.s3.amazonaws.com/public/images/features/3.png'
     },
     {
         title: 'Invite clients or test it publicly',
@@ -54,7 +46,7 @@ const steps = [
             'Releasy will send an email to your client with a confidential link to test: no previous registration is required.',
             "Releasy will create a publicly accessible link to test the release if you decide to create a public testing."
         ],
-        image: Step4
+        image: 'https://releasyapp-crm.s3.amazonaws.com/public/images/features/4.png'
     },
     {
         title: 'Test the release',
@@ -66,7 +58,7 @@ const steps = [
             "If a feature is rejected, your client must say why.",
             "If all features are approved, the release is automatically approved."
         ],
-        image: Step5
+        image: 'https://releasyapp-crm.s3.amazonaws.com/public/images/features/5.png'
     },
     {
         title: 'Generate a testing report',
@@ -76,7 +68,7 @@ const steps = [
             'The PDF report can be personalized for your business with logos, headers and footers.',
             "The report is saved and shared only between you and your client, once generated, it cannot be modified by anyone else."
         ],
-        image: Step6
+        image: 'https://releasyapp-crm.s3.amazonaws.com/public/images/features/6.png'
     },
     {
         title: 'Add integrations',
@@ -87,7 +79,7 @@ const steps = [
             "Use http webhooks to connect to Zapier or any API.",
             "Send event notifications to Slack, Telegram and Discord."
         ],
-        image: Step7
+        image: 'https://releasyapp-crm.s3.amazonaws.com/public/images/features/7.png'
     }
 ]
 
@@ -122,6 +114,7 @@ const Features = () => {
                                 list={p.list}
                                 image={p.image}
                                 index={i}
+                                key={i}
                             />
                         ))}
                     </Box>
