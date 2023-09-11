@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  releasy-landing:
+    container_name: releasy-landing
+    build:
+      context: .
+      dockerfile: docker/dev/Dockerfile
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+
+volumes:
+  node_modules:
