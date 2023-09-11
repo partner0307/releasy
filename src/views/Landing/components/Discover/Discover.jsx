@@ -3,10 +3,6 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 import Image from 'next/image';
-
-import SimplicityDesign from 'images/landing/discover/simplicity-design.png';
-import ValidateFeature from 'images/landing/discover/validate-feature.png';
-import BattleTested from 'images/landing/discover/battle-tested.png';
 import { Button } from '@mui/material';
 
 const Discover = () => {
@@ -79,7 +75,7 @@ const Discover = () => {
               borderRadius: theme.spacing(0.5)
             }}
           >
-              <Image src={SimplicityDesign} />
+              <Image src={'https://releasyapp-crm.s3.amazonaws.com/public/images/simplicity-design.png'} width={'100%'} height={'100%'} />
           </Box>
         </Box>
         <Box
@@ -99,7 +95,7 @@ const Discover = () => {
               borderRadius: theme.spacing(0.5)
             }}
           >
-              <Image src={ValidateFeature} />
+              <Image src={'https://releasyapp-crm.s3.amazonaws.com/public/images/validate-feature.png'} width={'100%'} height={'100%'} />
           </Box>
           <Box
             display={'flex'}
@@ -151,7 +147,7 @@ const Discover = () => {
               borderRadius: theme.spacing(0.5)
             }}
           >
-              <Image src={BattleTested} />
+              <Image src={'https://releasyapp-crm.s3.amazonaws.com/public/images/battle-tested.png'} width={'100%'} height={'100%'} />
           </Box>
         </Box>
       </Box>

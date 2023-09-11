@@ -4,10 +4,6 @@ import { Main } from 'layouts';
 import Image from 'next/image';
 import React from 'react';
 
-import Freelancers from 'images/use-case/developers.jpg';
-import Owners from 'images/use-case/project-owners.jpg';
-import Managers from 'images/use-case/project-managers.jpg';
-
 const UseCase = () => {
     const theme = useTheme();
 
@@ -56,7 +52,7 @@ const UseCase = () => {
                                     }
                                 }}
                             >
-                                <Image src={Freelancers} />
+                                <Image src={'https://releasyapp-crm.s3.amazonaws.com/public/images/use-case/developers.jpg'} width={'100%'} height={'100%'} />
                             </Box>
                             <Box
                                 width={{ xs: '100%', sm: '100%', md: '40%' }}
@@ -104,7 +100,7 @@ const UseCase = () => {
                                     }
                                 }}
                             >
-                                <Image src={Owners} />
+                                <Image src={'https://releasyapp-crm.s3.amazonaws.com/public/images/use-case/project-owners.jpg'} width={'100%'} height={'100%'} />
                             </Box>
                             <Box
                                 width={{ xs: '100%', sm: '100%', md: '40%' }}
@@ -152,7 +148,7 @@ const UseCase = () => {
                                     }
                                 }}
                             >
-                                <Image src={Managers} />
+                                <Image src={'https://releasyapp-crm.s3.amazonaws.com/public/images/use-case/project-managers.jpg'} width={'100%'} height={'100%'} />
                             </Box>
                             <Box
                                 width={{ xs: '100%', sm: '100%', md: '40%' }}

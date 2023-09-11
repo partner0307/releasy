@@ -5,8 +5,6 @@ import { Main } from 'layouts';
 import Image from 'next/image';
 import React from 'react';
 
-import FreelancersImage from 'images/use-case/developers.jpg';
-
 const Freelancers = () => {
     const theme = useTheme();
 
@@ -37,7 +35,7 @@ const Freelancers = () => {
                         <Box
                             flex={1}
                         >
-                            <Image src={FreelancersImage} />
+                            <Image src={'https://releasyapp-crm.s3.amazonaws.com/public/images/use-case/developers.jpg'} width={'100%'} height={'100%'} />
                         </Box>
                         <Box
                             display={'flex'}
