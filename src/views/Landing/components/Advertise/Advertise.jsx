@@ -1,5 +1,7 @@
 import React from 'react';
 import { Box, Button, Typography, useTheme } from '@mui/material';
+
+import SimplicityDesign from 'images/landing/discover/simplicity-design.png';
 import Image from 'next/image';
 
 const Advertise = () => {
@@ -86,7 +88,7 @@ const Advertise = () => {
                             borderRadius: theme.spacing(0.5)
                         }}
                     >
-                        <Image src={'https://releasyapp-crm.s3.amazonaws.com/public/images/simplicity-design.png'} width={'100%'} height={'100%'} />
+                        <Image src={SimplicityDesign} />
                     </Box>
                 </Box>
             </Box>
