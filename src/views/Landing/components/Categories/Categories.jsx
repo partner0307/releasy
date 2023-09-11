@@ -5,140 +5,56 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
-import Avatar from '@mui/material/Avatar';
-import { alpha } from '@mui/material/styles';
 import { colors, useTheme } from '@mui/material';
-import DiamondIcon from 'icons/DiamondIcon';
-import OvalIcon from 'icons/OvalIcon';
-import ListViewIcon from 'icons/ListViewIcon';
-import BadgeIcon from 'icons/BadgeIcon';
-import ShareIcon from 'icons/ShareIcon';
-import CheckBoxIcon from 'icons/CheckBoxIcon';
-import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
 
 const mock = [
   {
     color: colors.lightBlue[500],
     title: 'Create projects',
     subtitle:
-      'Transparently satisfy your clients needs and get paid for your hard work.',
-    icon: (
-      <>
-        <DiamondIcon />
-      </>
-    ),
+      'Transparently satisfy your clients needs and get paid for your hard work.'
   },
   {
     color: colors.purple[500],
     title: 'Define releases',
-    subtitle: 'Follow all agile principles and test every project release.',
-    icon: (
-      <>
-        <OvalIcon />
-      </>
-    ),
+    subtitle: 'Follow all agile principles and test every project release.'
   },
   {
     color: colors.yellow[500],
     title: 'Add features/user stories for testing',
-    subtitle: 'Define what to test, how to test and the acceptance criteria.',
-    icon: (
-      <>
-        <ListViewIcon />
-      </>
-    ),
+    subtitle: 'Define what to test, how to test and the acceptance criteria.'
   },
   {
     color: colors.indigo[500],
     title: 'Invite clients or testers',
-    subtitle: 'With one click, your client is now an active collaborator!',
-    icon: (
-      <>
-        <ShareIcon />
-      </>
-    ),
+    subtitle: 'With one click, your client is now an active collaborator!'
   },
   {
     color: colors.red[500],
     title: 'Test the release',
-    subtitle: 'Everything that needs to be approved ...all on one page.',
-    icon: (
-      <>
-        <CheckBoxIcon />
-      </>
-    ),
+    subtitle: 'Everything that needs to be approved ...all on one page.'
   },
   {
     color: colors.deepPurple[500],
     title: 'Approve or reject the release',
-    subtitle: "Two buttons -accept or reject- it's that easy!",
-    icon: (
-      <>
-        <BadgeIcon />
-      </>
-    ),
+    subtitle: "Two buttons -accept or reject- it's that easy!"
   },
   {
     color: colors.green[500],
     title: 'Generate testing reports',
-    subtitle: 'Approved or rejected, the documentation matters!',
-    icon: (
-      <svg
-        height={24}
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"
-        />
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
-        />
-      </svg>
-    ),
+    subtitle: 'Approved or rejected, the documentation matters!'
   },
   {
     color: colors.orange[500],
     title: 'Clone or generate new versions',
     subtitle:
-      'Clone or generate new versions and iterate until the project is completed.',
-    icon: (
-      <svg
-        height={24}
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
-        />
-      </svg>
-    ),
+      'Clone or generate new versions and iterate until the project is completed.'
   },
   {
     color: colors.grey[500],
     title: 'Integrate with external tools',
     subtitle:
-      'Send event notifications to Slack, Telegram and Discord or any API',
-    icon: (
-      <>
-        <SettingsSuggestIcon />
-      </>
-    ),
+      'Send event notifications to Slack, Telegram and Discord or any API'
   },
 ];
 

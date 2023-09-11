@@ -1,19 +1,11 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import { useTheme } from '@mui/material/styles';
-import Link from '@mui/material/Link';
-
-import NavItem from './components/NavItem';
 import { Typography } from '@mui/material';
 
-const SidebarNav = ({ colorInvert = false }) => {
-  const theme = useTheme();
-  const { mode } = theme.palette;
+const SidebarNav = () => {
   const loginUrl = process.env.NEXT_PUBLIC_RELEASY_LOGIN_URL;
   const signupUrl = process.env.NEXT_PUBLIC_RELEASY_SIGNUP_URL;
-  const [activeLink, setActiveLink] = useState('');
 
   return (
     <Box>

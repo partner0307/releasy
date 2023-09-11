@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
 
-const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
+const Topbar = ({ onSidebarOpen }) => {
   const theme = useTheme();
   const router = useRouter();
 
@@ -111,8 +111,7 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
 };
 
 Topbar.propTypes = {
-  onSidebarOpen: PropTypes.func,
-  colorInvert: PropTypes.bool,
+  onSidebarOpen: PropTypes.func
 };
 
 export default Topbar;

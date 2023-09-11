@@ -10,8 +10,6 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Container from 'components/layout/Container';
 
 import { Topbar, Sidebar, Footer } from './components';
-
-import pages from '../navigation';
 import Copyright from './components/Copyright';
 
 const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
@@ -52,7 +50,6 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
         <Container paddingY={1}>
           <Topbar
             onSidebarOpen={handleSidebarOpen}
-            pages={pages}
             colorInvert={trigger ? false : colorInvert}
           />
         </Container>
@@ -61,7 +58,6 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
         onClose={handleSidebarClose}
         open={open}
         variant="temporary"
-        pages={pages}
       />
       <Box paddingTop={theme.spacing(5)}>
         <main>
