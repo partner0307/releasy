@@ -1,0 +1,81 @@
+{
+  "name": "Releasy",
+  "author": "Releasy team",
+  "email": "support@releasyapp.com",
+  "version": "4.8.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 8080",
+    "build": "next build",
+    "start": "next start -p 8080",
+    "prettier:fix": "prettier './src/**/*.js' --write",
+    "eslint:fix": "eslint ./src --fix",
+    "codeStyle:fix": "npm run prettier:fix",
+    "clear-all": "rimraf ./node_modules ./.next"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "last 2 versions",
+      "Firefox ESR",
+      "not dead",
+      "not IE 11",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.10.3",
+    "@emotion/react": "^11.10.4",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.4",
+    "@kmariappan/strapi-client-js": "^1.3.0",
+    "@mui/icons-material": "^5.10.3",
+    "@mui/material": "^5.10.5",
+    "aos": "^2.3.4",
+    "axios": "^1.2.2",
+    "card-validator": "^8.1.1",
+    "formik": "^2.2.9",
+    "jarallax": "^2.0.4",
+    "lodash": "^4.17.21",
+    "micromark": "^3.1.0",
+    "moment": "^2.29.4",
+    "next": "^12.3.0",
+    "next-sitemap": "^4.0.7",
+    "prop-types": "^15.8.1",
+    "qs": "^6.11.0",
+    "react": "^18.2.0",
+    "react-countup": "^6.3.1",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.0",
+    "react-markdown": "^8.0.4",
+    "react-slick": "^0.29.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "react-type-animation": "^3.1.0",
+    "react-visibility-sensor": "^5.1.1",
+    "slick-carousel": "^1.8.1",
+    "swr": "^2.0.3",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-syntax-flow": "^7.14.5",
+    "@babel/plugin-transform-react-jsx": "^7.14.9",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.23.1",
+    "eslint-plugin-react": "^7.31.8",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^2.7",
+    "yarn-upgrade-all": "^0.7.1"
+  }
+}
