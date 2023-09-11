@@ -4,10 +4,10 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Image from 'next/image';
-import ClientImage from 'images/non-technical.png';
-import DesignImage from 'images/designed-easy.png';
-import ApprovalImage from 'images/trust-approval.png';
-import AgileImage from 'images/agile-principle.png';
+import ClientImage from 'images/landing/service/non-technical.png';
+import DesignImage from 'images/landing/service/designed-easy.png';
+import ApprovalImage from 'images/landing/service/trust-approval.png';
+import AgileImage from 'images/landing/service/agile-principle.png';
 
 const mock = [
   {

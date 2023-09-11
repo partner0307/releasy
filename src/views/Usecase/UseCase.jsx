@@ -4,9 +4,9 @@ import { Main } from 'layouts';
 import Image from 'next/image';
 import React from 'react';
 
-import Freelancers from 'images/developers.jpg';
-import Owners from 'images/project-owners.jpg';
-import Managers from 'images/project-managers.jpg';
+import Freelancers from 'images/use-case/developers.jpg';
+import Owners from 'images/use-case/project-owners.jpg';
+import Managers from 'images/use-case/project-managers.jpg';
 
 const UseCase = () => {
     const theme = useTheme();

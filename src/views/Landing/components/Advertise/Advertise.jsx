@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Button, Typography, useTheme } from '@mui/material';
 
-import SimplicityDesign from 'images/simplicity-design.png';
+import SimplicityDesign from 'images/landing/discover/simplicity-design.png';
 import Image from 'next/image';
 
 const Advertise = () => {
