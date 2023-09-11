@@ -1,8 +1,6 @@
-import BlogArticle from 'views/BlogArticle';
+import { BlogArticle } from 'views';
 
 import StrapiClient from 'lib/Strapi';
-import Head from 'next/head';
-import FallbackSpinner from 'components/spinner';
 
 export async function getStaticPaths() {
   const { data, error, meta } = await StrapiClient.from('articles')
@@ -34,10 +32,6 @@ export async function getStaticProps({ params }) {
 }
 
 const BlogArticlePage = ({ article }) => {
-  if (!article) {
-    return <FallbackSpinner />;
-  }
-
   return (
     <>
       <BlogArticle article={article} />

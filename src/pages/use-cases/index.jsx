@@ -1,8 +1,8 @@
 import React from 'react';
-import { UseCase } from 'views';
+import { Usecase } from 'views';
 
 const UseCasePage = () => {
-  return <UseCase />;
+  return <Usecase />;
 };
 
 export default UseCasePage;
