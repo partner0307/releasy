@@ -48,7 +48,7 @@ const Freelancers = () => {
                             flexDirection={'column'}
                             gap={theme.spacing(0.75)}
                         >
-                            <Typography variant='h1' component={'div'} align='center'>
+                            <Typography variant='h1' component={'h1'} align='center'>
                                 <Typography variant='h1' component={'span'} color={'secondary'}>Releasy</Typography> for freelancers
                             </Typography>
                             <Typography variant='body1' align='center'>Releasy shows clients that the freelancer takes their work seriously and is committed to delivering high-quality work. This can lead to a more professional image and better reputation in the industry.</Typography>

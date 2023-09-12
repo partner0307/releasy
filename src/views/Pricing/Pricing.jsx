@@ -69,7 +69,7 @@ const Pricing = ({ plans }) => {
                                     gap={theme.spacing(0.5)}
                                 >
                                     <Typography variant='caption' align='center' sx={{ color: theme.palette.secondary.main }}>Pricing and Plan</Typography>
-                                    <Typography variant='h1' align='center'>Find Right Pricing Plan For You</Typography>
+                                    <Typography variant='h1' component={'h1'} align='center'>Find Right Pricing Plan For You</Typography>
                                 </Box>
                                 <Typography variant='body1' align='center'>Get started with a 15-day trial period. No sign-up or credit card required.</Typography>
                             </Box>

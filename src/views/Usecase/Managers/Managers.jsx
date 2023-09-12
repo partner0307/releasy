@@ -48,7 +48,7 @@ const Managers = () => {
                             flexDirection={'column'}
                             gap={theme.spacing(0.75)}
                         >
-                            <Typography variant='h1' component={'div'} align='center'>
+                            <Typography variant='h1' component={'h1'} align='center'>
                                 <Typography variant='h1' component={'span'} color={'secondary'}>Releasy</Typography> for managers
                             </Typography>
                             <Typography variant='body1' align='center'>Releasy provides Project Managers with a clear view of project status and progress, enabling them to make informed decisions and adjust plans as necessary.</Typography>

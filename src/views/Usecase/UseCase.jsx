@@ -45,7 +45,7 @@ const UseCase = () => {
                             flexDirection={'column'}
                             gap={theme.spacing(0.75)}
                         >
-                            <Typography variant='h1' align='center'>
+                            <Typography variant='h1' component={'h1'} align='center'>
                                 Who Can Use <Typography variant='h1' component={'span'} color={'secondary'}>Releasy</Typography>
                             </Typography>
                             <Typography variant='body1' align='center'>It's suited for freelancers, project managers, product owners, startups, teams, and businesses.</Typography>

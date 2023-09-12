@@ -128,7 +128,7 @@ const Features = () => {
                             flexDirection={'column'}
                             gap={theme.spacing(0.75)}
                         >
-                            <Typography variant='h1' align='center'>Easy Delivery Project</Typography>
+                            <Typography variant='h1' component={'h1'} align='center'>Easy Delivery Project</Typography>
                             <Typography variant='body' align='center'>Releasy simplifies client collaboration and approvals for non-automated tests with time constraints.</Typography>
                         </Box>
                         <Box
