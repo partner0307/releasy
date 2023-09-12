@@ -51,7 +51,7 @@ const Hero = () => {
               color={theme.palette.common.black}
               align={'center'}
             >
-              Simplify quality assurance with Releasy
+              Simplify quality assurance with Releasy For
               <Typography
                 variant={'h1'}
                 component={'div'}
@@ -59,13 +59,13 @@ const Hero = () => {
               >
                 <TypeAnimation
                   sequence={[
-                    'for freelancers',
+                    'freelancers',
                     2000,
-                    'for project managers',
+                    'project managers',
                     2000,
-                    'for product owners',
+                    'product owners',
                     2000,
-                    'for agile teams',
+                    'agile teams',
                     2000,
                   ]}
                   wrapper="span"
@@ -77,7 +77,7 @@ const Hero = () => {
             </Typography>
             <Box
               component={'div'}
-              width={{ md: theme.spacing(33.125), sm: theme.spacing(15), xs: theme.spacing(10) }}
+              width={{ md: theme.spacing(33.125), sm: theme.spacing(15), xs: theme.spacing(20) }}
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 530 22" fill="none">
                 <path d="M2.53186 5.95776C220.564 0.370207 524.065 2.81476 525.81 4.9101C553.718 7.00543 55.7318 12.9422 41.7777 16.0852C27.8236 19.2282 187.423 17.1329 343.535 18.5298" stroke="#FFCE59" strokeWidth="5" strokeLinecap="round" strokeDasharray="0.61 0.61"/>
