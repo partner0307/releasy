@@ -65,7 +65,9 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
           <Divider />
         </main>
       </Box>
-      <Footer />
+      <Container>
+        <Footer />
+      </Container>
       <Divider />
       <Container>
         <Copyright />

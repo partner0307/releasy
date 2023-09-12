@@ -18,7 +18,7 @@ const Footer = () => {
       alignItems={{ xs: 'center', sm: 'center', md: 'flex-start' }}
       flexDirection={{ xs: 'column', sm: 'column', md: 'row' }}
       gap={{ xs: theme.spacing(2), sm: theme.spacing(3) }}
-      padding={{ xs: theme.spacing(15, 1, 2.5), sm: theme.spacing(13, 3, 2.5), md: theme.spacing(12, 6.88, 2.5) }}
+      padding={{ xs: theme.spacing(15, 1, 2.5), sm: theme.spacing(13, 3, 2.5), md: theme.spacing(12, 0, 2.5) }}
     >
       <Newsletter />
       <Box
