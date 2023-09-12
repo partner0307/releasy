@@ -67,9 +67,9 @@ const LandingPage = () => {
           <Discover />
         </Container>
       </Box>
-      <Container>
+      {/* <Container>
         <Testimonials />
-      </Container>
+      </Container> */}
       <Box position={'relative'} overflow={'hidden'}>
         <Box
           position={'absolute'}
