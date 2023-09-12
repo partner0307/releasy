@@ -32,7 +32,7 @@ const Card = ({ item, step }) => {
                     display={'flex'}
                     alignItems={'baseline'}
                 >
-                    <Typography variant='h1' component={'h1'} color={step === 1 ? theme.palette.secondary.main : theme.palette.common.black}>{item.price}</Typography>
+                    <Typography variant='h1' component={'div'} color={step === 1 ? theme.palette.secondary.main : theme.palette.common.black}>{item.price}</Typography>
                     <Typography variant='subtitle1' component={'span'}>{item.priceDetail}</Typography>
                 </Box>
                 <Box

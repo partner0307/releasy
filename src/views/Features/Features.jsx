@@ -136,7 +136,6 @@ const Features = () => {
                             flexDirection={'column'}
                             gap={theme.spacing(3)}
                             mt={theme.spacing(3.5)}
-                            maxWidth={1200}
                             mx={'auto'}
                         >
                             {steps.map((p, i) => (
