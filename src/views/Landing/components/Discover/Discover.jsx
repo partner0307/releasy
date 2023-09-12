@@ -79,7 +79,7 @@ const Discover = () => {
               borderRadius: theme.spacing(0.5)
             }}
           >
-              <Image src={SimplicityDesign} alt='discover-image-1' />
+              <Image src={SimplicityDesign} alt='discover-image-1' title='discover-image-1' />
           </Box>
         </Box>
         <Box
@@ -97,7 +97,7 @@ const Discover = () => {
               borderRadius: theme.spacing(0.5)
             }}
           >
-              <Image src={ValidateFeature} alt='discover-image-2' />
+              <Image src={ValidateFeature} alt='discover-image-2' title='discover-image-2' />
           </Box>
           <Box
             display={'flex'}
@@ -148,7 +148,7 @@ const Discover = () => {
               borderRadius: theme.spacing(0.5)
             }}
           >
-              <Image src={BattleTested} alt='discover-image-3' />
+              <Image src={BattleTested} alt='discover-image-3' title='discover-image-3' />
           </Box>
         </Box>
       </Box>

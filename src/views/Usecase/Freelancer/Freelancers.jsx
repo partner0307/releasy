@@ -61,7 +61,7 @@ const Freelancers = () => {
                             <Box
                                 flex={1}
                             >
-                                <Image src={FreelancersImage} alt='freelancers' />
+                                <Image src={FreelancersImage} alt='freelancers' title='freelancers' />
                             </Box>
                             <Box
                                 display={'flex'}

@@ -61,7 +61,7 @@ const Owners = () => {
                             <Box
                                 flex={1}
                             >
-                                <Image src={OwnersImage} alt='owners' />
+                                <Image src={OwnersImage} alt='owners' title='owners' />
                             </Box>
                             <Box
                                 display={'flex'}

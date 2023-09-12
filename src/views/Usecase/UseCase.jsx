@@ -77,7 +77,7 @@ const UseCase = () => {
                                         }
                                     }}
                                 >
-                                    <Image src={Freelancers} alt='freelancer' />
+                                    <Image src={Freelancers} alt='freelancer' title='freelancer' />
                                 </Box>
                                 <Box
                                     width={{ xs: '100%', sm: '100%', md: '40%' }}
@@ -125,7 +125,7 @@ const UseCase = () => {
                                         }
                                     }}
                                 >
-                                    <Image src={Owners} alt='owner' />
+                                    <Image src={Owners} alt='owner' title='owner' />
                                 </Box>
                                 <Box
                                     width={{ xs: '100%', sm: '100%', md: '40%' }}
@@ -173,7 +173,7 @@ const UseCase = () => {
                                         }
                                     }}
                                 >
-                                    <Image src={Managers} alt='manager' />
+                                    <Image src={Managers} alt='manager' title='manager' />
                                 </Box>
                                 <Box
                                     width={{ xs: '100%', sm: '100%', md: '40%' }}
