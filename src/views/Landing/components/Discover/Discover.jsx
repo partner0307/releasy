@@ -30,6 +30,7 @@ const Discover = () => {
       >
         <Typography
           variant='h1'
+          component={'div'}
           align='center'
         >
           Discover <Typography variant='span' component={'span'} color='secondary'>Releasy</Typography> for Agile UAT
@@ -45,7 +46,6 @@ const Discover = () => {
         display={'flex'}
         flexDirection={'column'}
         gap={theme.spacing(5)}
-        maxWidth={1200}
         margin={'auto'}
       >
         <Box

@@ -54,7 +54,6 @@ const UseCase = () => {
                             display={'flex'}
                             flexDirection={'column'}
                             gap={theme.spacing(1.75)}
-                            maxWidth={1200}
                             mx={'auto'}
                         >
                             <Box

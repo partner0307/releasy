@@ -55,6 +55,7 @@ const Hero = () => {
               Simplify quality assurance with Releasy
               <Typography
                 variant={'h1'}
+                component={'div'}
                 color={theme.palette.primary.main}
               >
                 <TypeAnimation
@@ -118,7 +119,7 @@ const Hero = () => {
             </Button>
           </Box>
 
-          <Box align={'center'} position={'relative'} overflow={'hidden'} maxWidth={1200} mt={5} mx={'auto'}>
+          <Box align={'center'} position={'relative'} overflow={'hidden'} mt={5} mx={'auto'}>
             <div
               style={{
                 position: 'relative',

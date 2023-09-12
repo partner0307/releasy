@@ -21,6 +21,7 @@ const Testimonials = () => {
       >
         <Typography
           variant={'h1'}
+          component={'div'}
           align={'center'}
         >
           Testimonials
