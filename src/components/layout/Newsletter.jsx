@@ -45,9 +45,9 @@ const Newsletter = () => {
     return (
         <Box
             position={'absolute'}
-            top={theme.spacing(-8.5)}
-            left={{ xs: '5%', sm: '10%', md: '20%' }}
-            right={{ xs: '5%', sm: '10%', md: '20%' }}
+            top={theme.spacing(-10.5)}
+            left={{ xs: '5%', sm: '10%', md: '10%' }}
+            right={{ xs: '5%', sm: '10%', md: '10%' }}
             display={'flex'}
             flexDirection={'column'}
             gap={theme.spacing(1.3)}

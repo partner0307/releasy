@@ -10,8 +10,8 @@ const Container = ({ children, ...rest }) => {
       width={1}
       margin={'0 auto'}
       maxWidth={theme.spacing(77.25)}
-      padding={theme.spacing(0)}
-      overflow={'hidden'}
+      paddingX={{ xs: theme.spacing(1), sm: theme.spacing(3) }}
+      // overflow={'hidden'}
       {...rest}
     >
       {children}
