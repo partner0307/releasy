@@ -11,7 +11,6 @@ const Container = ({ children, ...rest }) => {
       margin={'0 auto'}
       maxWidth={theme.spacing(77.25)}
       paddingX={{ xs: theme.spacing(1), sm: theme.spacing(3) }}
-      // overflow={'hidden'}
       {...rest}
     >
       {children}
