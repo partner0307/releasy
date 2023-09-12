@@ -31,7 +31,7 @@ const Advertise = () => {
                         flexDirection={'column'}
                         gap={theme.spacing(1.5)}
                     >
-                        <Typography variant='h2'>Experience the ease of Releasy today - Get Started for free!</Typography>
+                        <Typography variant='h2'>Experience the ease of <Typography variant='h2' component={'span'} color={theme.palette.secondary.main}>Releasy</Typography> today - Get Started for free!</Typography>
                         <Typography variant='body1'>Join the fast growing community of freelancers and business owners who enjoy Releasy!</Typography>
                     </Box>
                     <Box>
