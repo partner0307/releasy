@@ -33,6 +33,7 @@ const NotFound = () => {
             <Box>
               <Typography
                 variant="h1"
+                component={'h1'}
                 align={isMd ? 'left' : 'center'}
               >
                 404

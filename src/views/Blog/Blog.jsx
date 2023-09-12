@@ -12,7 +12,7 @@ const Blog = () => {
                 <Box
                     padding={theme.spacing(0, 0, 12)}
                 >
-                    <Typography variant='h1' align='center'>Coming Soon</Typography>
+                    <Typography variant='h1' component={'h1'} align='center'>Coming Soon</Typography>
                 </Box>
             </Container>
         </Main>

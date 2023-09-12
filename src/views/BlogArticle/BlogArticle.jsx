@@ -7,7 +7,7 @@ const BlogArticle = () => {
     return (
         <Main>
             <Container>
-                <Typography variant='h1' align='center'>Coming Soon</Typography>
+                <Typography variant='h1' component={'h1'} align='center'>Coming Soon</Typography>
             </Container>
         </Main>
     )

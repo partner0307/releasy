@@ -47,6 +47,7 @@ const Hero = () => {
           <Box marginBottom={1} align={'center'}>
             <Typography
               variant={"h1"}
+              component={'h1'}
               color={theme.palette.common.black}
               align={'center'}
             >
