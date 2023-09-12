@@ -88,7 +88,7 @@ const Advertise = () => {
                             borderRadius: theme.spacing(0.5)
                         }}
                     >
-                        <Image src={SimplicityDesign} alt='advertise' />
+                        <Image src={SimplicityDesign} alt='advertise' title='advertise' />
                     </Box>
                 </Box>
             </Box>
