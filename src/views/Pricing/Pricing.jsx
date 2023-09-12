@@ -113,7 +113,7 @@ const Pricing = ({ plans }) => {
                                     .filter(p => p.active)
                                     .filter(p => p.monthly === !Boolean(isMonthOrYear))
                                     .map((item, i) => (
-                                        <Grid item xs={12} sm={6} md={4}>
+                                        <Grid item xs={12} sm={6} md={4} key={i}>
                                             <Card item={item} step={i} />
                                         </Grid>
                                     ))

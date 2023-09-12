@@ -57,10 +57,7 @@ const Services = () => {
       display={'flex'}
       flexDirection={'column'}
       gap={theme.spacing(4)}
-      padding={{ xs: theme.spacing(5.12, 1, 6.5), sm: theme.spacing(5.12, 3.88, 6.5), md: theme.spacing(5.12, 6.88, 6.5) }}
-      sx={{
-        background: theme.palette.common.white
-      }}
+      padding={{ xs: theme.spacing(5.12, 1, 6.5), sm: theme.spacing(5.12, 3.88, 6.5), md: theme.spacing(5.12, 0, 6.5) }}
     >
       <Box
         display={'flex'}

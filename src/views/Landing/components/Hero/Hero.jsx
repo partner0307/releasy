@@ -13,35 +13,8 @@ const Hero = () => {
 
   return (
     <Box
-      position={'relative'}
       paddingBottom={theme.spacing(4.5)}
     >
-      <Box
-        component={'div'}
-        position={'absolute'}
-        bottom={theme.spacing(20)}
-        left={theme.spacing(-20)}
-        style={{
-          width: theme.spacing(52),
-          height: theme.spacing(52),
-          background: 'rgba(255, 199, 116, 0.30)',
-          filter: 'blur(200px)',
-          zIndex: 0
-        }}
-      />
-      <Box
-        component={'div'}
-        position={'absolute'}
-        bottom={theme.spacing(20)}
-        right={theme.spacing(-20)}
-        style={{
-          width: theme.spacing(52),
-          height: theme.spacing(52),
-          background: 'rgba(148, 164, 196, 0.40)',
-          filter: 'blur(200px)',
-          zIndex: 0
-        }}
-      />
       <Grid container spacing={4}>
         <Grid item alignItems={'top'} xs={12} md={12}>
           <Box marginBottom={1} align={'center'}>
@@ -51,7 +24,7 @@ const Hero = () => {
               color={theme.palette.common.black}
               align={'center'}
             >
-              Simplify quality assurance with Releasy For
+              Simplify quality assurance with Releasy for
               <Typography
                 variant={'h1'}
                 component={'div'}
