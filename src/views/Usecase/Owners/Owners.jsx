@@ -48,7 +48,7 @@ const Owners = () => {
                             flexDirection={'column'}
                             gap={theme.spacing(0.75)}
                         >
-                            <Typography variant='h1' component={'div'} align='center'>
+                            <Typography variant='h1' align='center'>
                                 <Typography variant='h1' component={'span'} color={'secondary'}>Releasy</Typography> for owners
                             </Typography>
                             <Typography variant='body1' align='center'>Releasy helps Product Owners to identify and resolve issues earlier in the development process, enabling them to bring products to market faster.</Typography>
@@ -61,7 +61,7 @@ const Owners = () => {
                             <Box
                                 flex={1}
                             >
-                                <Image src={OwnersImage} />
+                                <Image src={OwnersImage} alt='owners' />
                             </Box>
                             <Box
                                 display={'flex'}

@@ -45,7 +45,7 @@ const UseCase = () => {
                             flexDirection={'column'}
                             gap={theme.spacing(0.75)}
                         >
-                            <Typography variant='h1' component={'div'} align='center'>
+                            <Typography variant='h1' align='center'>
                                 Who Can Use <Typography variant='h1' component={'span'} color={'secondary'}>Releasy</Typography>
                             </Typography>
                             <Typography variant='body1' align='center'>It's suited for freelancers, project managers, product owners, startups, teams, and businesses.</Typography>
@@ -77,7 +77,7 @@ const UseCase = () => {
                                         }
                                     }}
                                 >
-                                    <Image src={Freelancers} />
+                                    <Image src={Freelancers} alt='freelancer' />
                                 </Box>
                                 <Box
                                     width={{ xs: '100%', sm: '100%', md: '40%' }}
@@ -125,7 +125,7 @@ const UseCase = () => {
                                         }
                                     }}
                                 >
-                                    <Image src={Owners} />
+                                    <Image src={Owners} alt='owner' />
                                 </Box>
                                 <Box
                                     width={{ xs: '100%', sm: '100%', md: '40%' }}
@@ -173,7 +173,7 @@ const UseCase = () => {
                                         }
                                     }}
                                 >
-                                    <Image src={Managers} />
+                                    <Image src={Managers} alt='manager' />
                                 </Box>
                                 <Box
                                     width={{ xs: '100%', sm: '100%', md: '40%' }}

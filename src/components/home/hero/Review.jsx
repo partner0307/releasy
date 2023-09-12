@@ -37,7 +37,7 @@ const Review = () => {
                         height={theme.spacing(2.5)}
                     >
                         <Avatar>
-                            <Image src={AvatarImage} style={{ borderRadius: '50%' }} />
+                            <Image src={AvatarImage} style={{ borderRadius: '50%' }} alt='avatar' />
                         </Avatar>
                     </Box>
                     <Box
