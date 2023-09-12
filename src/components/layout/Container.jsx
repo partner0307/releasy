@@ -9,7 +9,8 @@ const Container = ({ children, ...rest }) => {
     <Box
       width={1}
       margin={'0 auto'}
-      padding={{md: theme.spacing(0, 6.88), sm: theme.spacing(0, 3), xs: theme.spacing(0, 1)}}
+      maxWidth={theme.spacing(77.25)}
+      padding={theme.spacing(0)}
       overflow={'hidden'}
       {...rest}
     >

@@ -18,7 +18,7 @@ const Discover = () => {
       display={'flex'}
       flexDirection={'column'}
       gap={theme.spacing(4)}
-      padding={{ xs: theme.spacing(4.5, 1), sm: theme.spacing(4.5, 4.88), md: theme.spacing(4.5, 6.88) }}
+      padding={{ xs: theme.spacing(4.5, 1), sm: theme.spacing(4.5, 4.88), md: theme.spacing(4.5, 0) }}
       sx={{
         background: theme.palette.common.white
       }}
