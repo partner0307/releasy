@@ -47,10 +47,8 @@ const Hero = () => {
           <Box marginBottom={1} align={'center'}>
             <Typography
               variant={"h1"}
-              component={'div'}
               color={theme.palette.common.black}
               align={'center'}
-              
             >
               Simplify quality assurance with Releasy
               <Typography

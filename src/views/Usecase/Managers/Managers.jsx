@@ -61,7 +61,7 @@ const Managers = () => {
                             <Box
                                 flex={1}
                             >
-                                <Image src={ManagersImage} />
+                                <Image src={ManagersImage} alt='managers' />
                             </Box>
                             <Box
                                 display={'flex'}

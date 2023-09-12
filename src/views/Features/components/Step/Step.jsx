@@ -49,7 +49,7 @@ const Step = ({ title, subtitle, list, image, index }) => {
             <Box
                 width={{ xs: 1, sm: 0.6, md: 0.45 }}
             >
-                <Image src={image} />
+                <Image src={image} alt='step-image' />
             </Box>
         </Box>
     )
