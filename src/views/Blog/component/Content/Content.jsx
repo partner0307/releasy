@@ -1,5 +1,6 @@
 import { Box, Grid, CircularProgress, Pagination, Stack, Typography, useTheme } from '@mui/material';
 import Article from 'components/blog/article';
+import Spinner from 'components/spinner';
 import StrapiClient from 'lib/Strapi';
 import React, { useState, useEffect } from 'react';
 
@@ -9,7 +10,6 @@ const Content = () => {
     const [meta, setMeta] = useState(null);
     const [page, setPage] = useState(1);
     const [perPage, setPerPage] = useState(9);
-    const [percent, setPercent] = useState(24);
 
     useEffect(() => {
         const fetchArticles = async () => {
@@ -29,34 +29,8 @@ const Content = () => {
         }
     }, [page, perPage]);
 
-    const renderSpinner = () => (
-        <Box padding={theme.spacing(0, 0, 15)} display={'flex'} justifyContent={'center'}>
-            <Box sx={{ position: 'relative', display: 'inline-flex' }}>
-                <CircularProgress variant="determinate" color="secondary" value={percent} />
-                <Box
-                    sx={{
-                        top: 0,
-                        left: 0,
-                        bottom: 0,
-                        right: 0,
-                        position: 'absolute',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                    }}
-                >
-                    <Typography
-                        variant="caption"
-                        component="div"
-                        color="text.secondary"
-                    >{`${percent}%`}</Typography>
-                </Box>
-            </Box>
-        </Box>
-    )
-
     if (!articles) {
-        return renderSpinner()
+        return <Spinner />
     }
 
     return (
