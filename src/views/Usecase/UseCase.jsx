@@ -8,6 +8,28 @@ import Freelancers from 'images/use-case/developers.jpg';
 import Owners from 'images/use-case/project-owners.jpg';
 import Managers from 'images/use-case/project-managers.jpg';
 import Head from 'next/head';
+import Card from './Card';
+
+const contents = [
+    {
+        image: <Image src={Freelancers} alt='freelancer' title='freelancer' />,
+        title: 'Freelancers',
+        description: 'Releasy shows clients that the freelancer takes their work seriously and is committed to delivering high-quality work. This can lead to a more professional image and better reputation in the industry.',
+        url: '/use-cases/freelancers'
+    },
+    {
+        image: <Image src={Owners} alt='owner' title='owner' />,
+        title: 'Product Owners',
+        description: 'Releasy helps Product Owners to identify and resolve issues earlier in the development process, enabling them to bring products to market faster.',
+        url: '/use-cases/product-owners'
+    },
+    {
+        image: <Image src={Managers} alt='manager' title='manager' />,
+        title: 'Project managers',
+        description: 'Releasy provides Project Managers with a clear view of project status and progress, enabling them to make informed decisions and adjust plans as necessary.',
+        url: '/use-cases/project-managers'
+    }
+]
 
 const UseCase = () => {
     const theme = useTheme();
@@ -56,150 +78,9 @@ const UseCase = () => {
                             gap={theme.spacing(1.75)}
                             mx={'auto'}
                         >
-                            <Box
-                                display={'flex'}
-                                flexDirection={{ xs: 'column', sm: 'column', md: 'row' }}
-                                justifyContent={'space-between'}
-                                gap={theme.spacing(3)}
-                                sx={{
-                                    background: theme.palette.common.white,
-                                    borderRadius: theme.spacing(0.625),
-                                    boxShadow: '0px 18px 40px 0px rgba(196, 196, 196, 0.25)'
-                                }}
-                            >
-                                <Box
-                                    flex={1}
-                                    height={{ xs: theme.spacing(16), sm: theme.spacing(24.75), md: theme.spacing(28) }}
-                                    sx={{
-                                        borderRadius: { xs: theme.spacing(0.625, 0.625, 0, 0), sm: theme.spacing(0.625, 0.625, 0, 0), md: theme.spacing(0.625, 0, 0, 0.625) },
-                                        '& > span': {
-                                            borderRadius: { xs: theme.spacing(0.625, 0.625, 0, 0), sm: theme.spacing(0.625, 0.625, 0, 0), md: theme.spacing(0.625, 0, 0, 0.625) },
-                                        }
-                                    }}
-                                >
-                                    <Image src={Freelancers} alt='freelancer' title='freelancer' />
-                                </Box>
-                                <Box
-                                    width={{ xs: '100%', sm: '100%', md: '40%' }}
-                                    display={'flex'}
-                                    flexDirection={'column'}
-                                    justifyContent={'space-between'}
-                                    alignItems={'flex-end'}
-                                    padding={theme.spacing(1.5)}
-                                >
-                                    <Box
-                                        display={'flex'}
-                                        flexDirection={'column'}
-                                        gap={theme.spacing(2.75)}
-                                    >
-                                        <Typography variant='h3'>Freelancers</Typography>
-                                        <Typography variant='body'>Releasy shows clients that the freelancer takes their work seriously and is committed to delivering high-quality work. This can lead to a more professional image and better reputation in the industry.</Typography>
-                                    </Box>
-                                    <Button
-                                        variant="contained"
-                                        color="primary"
-                                        component="a"
-                                        href='/use-cases/freelancers'
-                                        size='small'
-                                    >More Details</Button>
-                                </Box>
-                            </Box>
-                            <Box
-                                display={'flex'}
-                                flexDirection={{ xs: 'column', sm: 'column', md: 'row' }}
-                                justifyContent={'space-between'}
-                                gap={theme.spacing(3)}
-                                sx={{
-                                    background: theme.palette.common.white,
-                                    borderRadius: theme.spacing(0.625),
-                                    boxShadow: '0px 18px 40px 0px rgba(196, 196, 196, 0.25)'
-                                }}
-                            >
-                                <Box
-                                    flex={1}
-                                    height={{ xs: theme.spacing(16), sm: theme.spacing(24.75), md: theme.spacing(28) }}
-                                    sx={{
-                                        borderRadius: { xs: theme.spacing(0.625, 0.625, 0, 0), sm: theme.spacing(0.625, 0.625, 0, 0), md: theme.spacing(0.625, 0, 0, 0.625) },
-                                        '& > span': {
-                                            borderRadius: { xs: theme.spacing(0.625, 0.625, 0, 0), sm: theme.spacing(0.625, 0.625, 0, 0), md: theme.spacing(0.625, 0, 0, 0.625) },
-                                        }
-                                    }}
-                                >
-                                    <Image src={Owners} alt='owner' title='owner' />
-                                </Box>
-                                <Box
-                                    width={{ xs: '100%', sm: '100%', md: '40%' }}
-                                    display={'flex'}
-                                    flexDirection={'column'}
-                                    justifyContent={'space-between'}
-                                    alignItems={'flex-end'}
-                                    padding={theme.spacing(1.5)}
-                                >
-                                    <Box
-                                        display={'flex'}
-                                        flexDirection={'column'}
-                                        gap={theme.spacing(2.75)}
-                                    >
-                                        <Typography variant='h3'>Product Owners</Typography>
-                                        <Typography variant='body'>Releasy helps Product Owners to identify and resolve issues earlier in the development process, enabling them to bring products to market faster.</Typography>
-                                    </Box>
-                                    <Button
-                                        variant="contained"
-                                        color="primary"
-                                        component="a"
-                                        href='/use-cases/product-owners'
-                                        size='small'
-                                    >More Details</Button>
-                                </Box>
-                            </Box>
-                            <Box
-                                display={'flex'}
-                                flexDirection={{ xs: 'column', sm: 'column', md: 'row' }}
-                                justifyContent={'space-between'}
-                                gap={theme.spacing(3)}
-                                sx={{
-                                    background: theme.palette.common.white,
-                                    borderRadius: theme.spacing(0.625),
-                                    boxShadow: '0px 18px 40px 0px rgba(196, 196, 196, 0.25)'
-                                }}
-                            >
-                                <Box
-                                    flex={1}
-                                    height={{ xs: theme.spacing(16), sm: theme.spacing(24.75), md: theme.spacing(28) }}
-                                    sx={{
-                                        borderRadius: { xs: theme.spacing(0.625, 0.625, 0, 0), sm: theme.spacing(0.625, 0.625, 0, 0), md: theme.spacing(0.625, 0, 0, 0.625) },
-                                        '& > span': {
-                                            borderRadius: { xs: theme.spacing(0.625, 0.625, 0, 0), sm: theme.spacing(0.625, 0.625, 0, 0), md: theme.spacing(0.625, 0, 0, 0.625) },
-                                        }
-                                    }}
-                                >
-                                    <Image src={Managers} alt='manager' title='manager' />
-                                </Box>
-                                <Box
-                                    width={{ xs: '100%', sm: '100%', md: '40%' }}
-                                    display={'flex'}
-                                    flexDirection={'column'}
-                                    justifyContent={'space-between'}
-                                    alignItems={'flex-end'}
-                                    padding={theme.spacing(1.5)}
-                                >
-                                    <Box
-                                        display={'flex'}
-                                        flexDirection={'column'}
-                                        gap={theme.spacing(2.75)}
-                                    >
-                                        <Typography variant='h3'>Project managers</Typography>
-                                        <Typography variant='body'>Releasy provides Project Managers with a clear view of project status and progress, enabling them to make informed decisions and adjust plans as necessary.</Typography>
-                                    </Box>
-                                    <Button
-                                        variant="contained"
-                                        color="primary"
-                                        component="a"
-                                        href='/use-cases/project-managers'
-                                        size='small'
-                                    >More Details</Button>
-                                </Box>
-                            </Box>
+                            {contents.map((p, i) => (
+                                <Card item={p} key={i}/>
+                            ))}
                         </Box>
                     </Box>
                 </Container>

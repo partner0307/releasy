@@ -60,6 +60,12 @@ const Freelancers = () => {
                         >
                             <Box
                                 flex={1}
+                                sx={{
+                                    '& > span': {
+                                        width: '100% !important',
+                                        height: '100% !important'
+                                    }
+                                }}
                             >
                                 <Image src={FreelancersImage} alt='freelancers' title='freelancers' />
                             </Box>

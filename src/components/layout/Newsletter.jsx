@@ -58,6 +58,7 @@ const Newsletter = () => {
             boxShadow: '0px 15px 40px 0px rgba(196, 196, 196, 0.25)'
             }}
         >
+            <Toaster />
             <Box
                 display={'flex'}
                 flexDirection={'column'}
@@ -109,12 +110,12 @@ const Newsletter = () => {
                         background: '#8752F6',
                         color: theme.palette.common.white,
                         borderRadius: {
-                        xs: `${theme.spacing(0.3125)} ${theme.spacing(0.3125)} ${theme.spacing(0.3125)} ${theme.spacing(0.3125)}`,
-                        sm: `${theme.spacing(0.3125)} ${theme.spacing(0.3125)} ${theme.spacing(0.3125)} ${theme.spacing(0.3125)}`,
-                        md: `0 ${theme.spacing(0.3125)} ${theme.spacing(0.3125)} 0`
+                            xs: `${theme.spacing(0.3125)} ${theme.spacing(0.3125)} ${theme.spacing(0.3125)} ${theme.spacing(0.3125)}`,
+                            sm: `${theme.spacing(0.3125)} ${theme.spacing(0.3125)} ${theme.spacing(0.3125)} ${theme.spacing(0.3125)}`,
+                            md: `0 ${theme.spacing(0.3125)} ${theme.spacing(0.3125)} 0`
                         },
                         '&:hover': {
-                        background: '#8752F6'
+                            background: '#8752F6'
                         }
                     }}
                     onClick={formik.handleSubmit}

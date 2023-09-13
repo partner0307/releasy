@@ -60,6 +60,12 @@ const Owners = () => {
                         >
                             <Box
                                 flex={1}
+                                sx={{
+                                    '& > span': {
+                                        width: '100% !important',
+                                        height: '100% !important'
+                                    }
+                                }}
                             >
                                 <Image src={OwnersImage} alt='owners' title='owners' />
                             </Box>
