@@ -55,6 +55,20 @@ const Advertise = () => {
                     position={'relative'}
                     width={{ lg: '40%', md: '45%', sm: '80%' }}
                     height={{ lg: '80%', md: '90%', sm: '100%' }}
+                    sx={{
+                        '&:before': {
+                          width: theme.spacing(23.5625),
+                          height: theme.spacing(18),
+                          background: 'rgba(255, 217, 161, 0.40)',
+                          filter: 'blur(100px)',
+                        },
+                        '&:after': {
+                          width: theme.spacing(23.5625),
+                          height: theme.spacing(18),
+                          background: 'rgba(118, 98, 241, 0.30)',
+                          filter: 'blur(100px)', 
+                        }
+                      }}
                 >
                     <Box
                         position={'relative'}

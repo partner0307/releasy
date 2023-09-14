@@ -70,31 +70,10 @@ const LandingPage = () => {
       <Container>
         <Testimonials />
       </Container>
-      <Box position={'relative'} overflow={'hidden'}>
-        <Box
-          position={'absolute'}
-          right={theme.spacing(30.5)}
-          bottom={theme.spacing(12.5)}
-          width={theme.spacing(23.5625)}
-          height={theme.spacing(18)}
-          sx={{
-              background: 'rgba(255, 217, 161, 0.40)',
-              filter: 'blur(100px)',
-              zIndex: 0
-          }}
-        />
-        <Box
-          position={'absolute'}
-          right={theme.spacing(6.5)}
-          bottom={theme.spacing(12.5)}
-          width={theme.spacing(23.5625)}
-          height={theme.spacing(18)}
-          sx={{
-              background: 'rgba(118, 98, 241, 0.30)',
-              filter: 'blur(100px)',
-              zIndex: 0
-          }}
-        />
+      <Box
+        position={'relative'}
+        overflow={'hidden'}
+      >
         <Container>
           <Advertise />
         </Container>

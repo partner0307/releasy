@@ -1,4 +1,4 @@
-import { Box, Grid, CircularProgress, Pagination, Stack, Typography, useTheme } from '@mui/material';
+import { Box, Grid, Pagination, Stack, Typography, useTheme } from '@mui/material';
 import Article from 'components/blog/article';
 import Spinner from 'components/spinner';
 import StrapiClient from 'lib/Strapi';
