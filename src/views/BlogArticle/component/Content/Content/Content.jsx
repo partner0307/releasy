@@ -5,6 +5,7 @@ import Image from 'next/image';
 import SubmitForm from '../../Form/Form';
 import { Box, Divider, Typography, useTheme } from '@mui/material';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import RelatedArticles from '../../RelatedArticles';
 
 const Content = ({ article }) => {
     const theme = useTheme();
@@ -100,6 +101,8 @@ const Content = ({ article }) => {
             </Box>
             <Divider />
             <SubmitForm />
+            <Divider />
+            <RelatedArticles currentArticle={article.id} />
         </Box>
     )
 }

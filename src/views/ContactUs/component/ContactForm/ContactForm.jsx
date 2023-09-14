@@ -1,23 +1,24 @@
 import { Box, Button, TextField, Typography, useTheme } from '@mui/material';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
+import StrapiClient from 'lib/Strapi';
 import toast, { Toaster } from 'react-hot-toast';
 import React from 'react';
 
 const validationSchema = yup.object({
     email: yup.string().trim().email('Please enter a valid email address').required('Email is required'),
-    firstname: yup.string().trim().required('First Name is required'),
-    lastname: yup.string().trim().required('Last Name is required'),
-    phone: yup.string().trim().required('Phone Number is required'),
-    message: yup.string().trim().required('Message is required')
+    firstName: yup.string().trim().min(2, 'Please enter a valid First Name').max(50, 'Please enter a valid First Name').required('First Name is required'),
+    lastName: yup.string().trim().min(2, 'Please enter a valid Last Name').max(50, 'Please enter a valid Last Name').required('Last Name is required'),
+    phone: yup.string().trim().min(8, 'Please enter a valid Phone Number').required('Phone Number is required'),
+    message: yup.string().trim().min(30, 'Please enter at least 30 letters.').required('Message is required')
 });
 
 const SubmitForm = () => {
     const theme = useTheme();
 
     const initialValues = {
-        firstname: '',
-        lastname: '',
+        firstName: '',
+        lastName: '',
         phone: '',
         email: '',
         company: '',
@@ -29,6 +30,7 @@ const SubmitForm = () => {
             'contact-forms',
         ).create(values);
         if (error) {
+            console.log(error);
             toast.error(error.message);
         } else {
             toast.success('Request sent successfully');
@@ -65,24 +67,24 @@ const SubmitForm = () => {
                     <TextField
                         type='text'
                         label="First Name"
-                        name='firstname'
+                        name='firstName'
                         variant="standard"
-                        value={formik.values.firstname}
+                        value={formik.values.firstName}
                         onChange={formik.handleChange}
-                        error={formik.touched.firstname && Boolean(formik.errors.firstname)}
-                        helperText={formik.touched.firstname && formik.errors.firstname}
+                        error={formik.touched.firstName && Boolean(formik.errors.firstName)}
+                        helperText={formik.touched.firstName && formik.errors.firstName}
                         fullWidth
                         autoComplete='off'
                     />
                     <TextField
                         type='text'
                         label="Last Name"
-                        name='lastname'
+                        name='lastName'
                         variant="standard"
-                        value={formik.values.lastname}
+                        value={formik.values.lastName}
                         onChange={formik.handleChange}
-                        error={formik.touched.lastname && Boolean(formik.errors.lastname)}
-                        helperText={formik.touched.lastname && formik.errors.lastname}
+                        error={formik.touched.lastName && Boolean(formik.errors.lastName)}
+                        helperText={formik.touched.lastName && formik.errors.lastName}
                         fullWidth
                         autoComplete='off'
                     />
