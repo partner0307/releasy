@@ -33,29 +33,27 @@ const Terms = ({ terms }) => {
                     <Box
                         padding={theme.spacing(0, 0, 13)}
                     >
-                        <Box borderRadius={2}>
-                            <Typography
-                                variant={'h1'}
-                                gutterBottom
-                                sx={{
-                                    fontWeight: 700,
-                                }}
-                                align={'center'}
-                            >
-                                Terms and Conditions
-                            </Typography>
-                            <Typography gutterBottom>
+                        <Typography
+                            variant={'h1'}
+                            component={'h1'}
+                            gutterBottom
+                            align={'center'}
+                        >
+                            Terms and Conditions
+                        </Typography>
+                        <Box
+                            display={'flex'}
+                            flexDirection={'column'}
+                            gap={theme.spacing(0.5)}
+                            padding={(theme.spacing(2, 0, 3))}
+                        >
+                            <Typography>
                                 Last modified on{' '}
                                 <strong>
                                     {moment(terms[0].publishedAt).format('MMMM Do YYYY')}
                                 </strong>
                             </Typography>
-                            <Typography
-                                gutterBottom
-                                sx={{
-                                    color: theme.palette.common.white,
-                                }}
-                            >
+                            <Typography>
                                 Version {terms[0].version}
                             </Typography>
                         </Box>
@@ -64,11 +62,9 @@ const Terms = ({ terms }) => {
                             position={'relative'}
                             top={0}
                         >
-                            <Box>
-                                <Typography component={'p'} color={'text.secondary'}>
-                                    <ReactMarkdown>{terms[0].content}</ReactMarkdown>
-                                </Typography>
-                            </Box>
+                            <Typography component={'p'} color={'text.secondary'}>
+                                <ReactMarkdown>{terms[0].content}</ReactMarkdown>
+                            </Typography>
                         </Box>
                     </Box>
                 </Container>

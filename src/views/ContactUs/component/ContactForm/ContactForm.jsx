@@ -6,7 +6,9 @@ import React from 'react';
 
 const validationSchema = yup.object({
     email: yup.string().trim().email('Please enter a valid email address').required('Email is required'),
-    name: yup.string().trim().required('Name is required'),
+    firstname: yup.string().trim().required('First Name is required'),
+    lastname: yup.string().trim().required('Last Name is required'),
+    phone: yup.string().trim().required('Phone Number is required'),
     message: yup.string().trim().required('Message is required')
 });
 
@@ -14,14 +16,24 @@ const SubmitForm = () => {
     const theme = useTheme();
 
     const initialValues = {
-        name: '',
+        firstname: '',
+        lastname: '',
+        phone: '',
         email: '',
+        company: '',
         message: ''
     };
 
     const onSubmit = async (values, { resetForm }) => {
-        toast.success('Submitted successfully');
-        resetForm();
+        const { data, error, meta } = await StrapiClient.from(
+            'contact-forms',
+        ).create(values);
+        if (error) {
+            toast.error(error.message);
+        } else {
+            toast.success('Request sent successfully');
+            resetForm();
+        }
     };
 
     const formik = useFormik({
@@ -37,8 +49,8 @@ const SubmitForm = () => {
             gap={theme.spacing(2)}
         >
             <Toaster />
-            <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
-                Leave Comment
+            <Typography variant="h2" component={'h2'} align='center'>
+                Contact Us
             </Typography>
             <Box
                 display={'flex'}
@@ -52,16 +64,34 @@ const SubmitForm = () => {
                 >
                     <TextField
                         type='text'
-                        label="Name"
-                        name='name'
+                        label="First Name"
+                        name='firstname'
                         variant="standard"
-                        value={formik.values.name}
+                        value={formik.values.firstname}
                         onChange={formik.handleChange}
-                        error={formik.touched.name && Boolean(formik.errors.name)}
-                        helperText={formik.touched.name && formik.errors.name}
+                        error={formik.touched.firstname && Boolean(formik.errors.firstname)}
+                        helperText={formik.touched.firstname && formik.errors.firstname}
                         fullWidth
                         autoComplete='off'
                     />
+                    <TextField
+                        type='text'
+                        label="Last Name"
+                        name='lastname'
+                        variant="standard"
+                        value={formik.values.lastname}
+                        onChange={formik.handleChange}
+                        error={formik.touched.lastname && Boolean(formik.errors.lastname)}
+                        helperText={formik.touched.lastname && formik.errors.lastname}
+                        fullWidth
+                        autoComplete='off'
+                    />
+                </Box>
+                <Box
+                    display={'flex'}
+                    flexDirection={{ xs: 'column', sm: 'column', md: 'row' }}
+                    gap={{ xs: theme.spacing(1), sm: theme.spacing(1), md: theme.spacing(3)}}
+                >
                     <TextField
                         type='email'
                         label="Email"
@@ -74,7 +104,29 @@ const SubmitForm = () => {
                         fullWidth
                         autoComplete='off'
                     />
+                    <TextField
+                        type='text'
+                        label="Phone Number"
+                        name='phone'
+                        variant="standard"
+                        value={formik.values.phone}
+                        onChange={formik.handleChange}
+                        error={formik.touched.phone && Boolean(formik.errors.phone)}
+                        helperText={formik.touched.phone && formik.errors.phone}
+                        fullWidth
+                        autoComplete='off'
+                    />
                 </Box>
+                <TextField
+                    type='text'
+                    label="Company"
+                    name='company'
+                    variant="standard"
+                    value={formik.values.company}
+                    onChange={formik.handleChange}
+                    fullWidth
+                    autoComplete='off'
+                />
                 <TextField
                     type='text'
                     label="Message"

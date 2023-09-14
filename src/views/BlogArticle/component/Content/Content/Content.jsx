@@ -3,16 +3,11 @@ import ReactMarkdown from 'react-markdown';
 import moment from 'moment';
 import Image from 'next/image';
 import SubmitForm from '../../Form/Form';
-import Spinner from 'components/spinner';
 import { Box, Divider, Typography, useTheme } from '@mui/material';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 const Content = ({ article }) => {
     const theme = useTheme();
-
-    if (!article) {
-        return <Spinner />
-    }
 
     return (
         <Box
