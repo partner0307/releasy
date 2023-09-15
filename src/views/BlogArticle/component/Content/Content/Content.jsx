@@ -100,7 +100,7 @@ const Content = ({ article }) => {
                 </Box>
             </Box>
             <Divider />
-            <SubmitForm />
+            {/* <SubmitForm /> */}
             <RelatedArticles currentArticle={article.id} />
         </Box>
     )
