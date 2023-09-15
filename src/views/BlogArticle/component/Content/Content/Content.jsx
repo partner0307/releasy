@@ -80,7 +80,8 @@ const Content = ({ article }) => {
                             sx={{
                                 '& > span': {
                                     width: '100%',
-                                    height: '100%'
+                                    height: '100%',
+                                    maxWidth: 'fit-content'
                                 }
                             }}
                         >
@@ -89,8 +90,7 @@ const Content = ({ article }) => {
                                 alt="article-image"
                                 loading="lazy"
                                 width={1440}
-                                height={400}
-                                objectFit='cover'
+                                height={1000}
                             />
                         </Box>
                     )}
