@@ -103,7 +103,7 @@ const Footer = () => {
             <Link href='/use-cases/freelancers'><Typography variant='body1' sx={{ cursor: 'pointer' }}>Freelancers</Typography></Link>
             <Link href='/use-cases/product-owners'><Typography variant='body1' sx={{ cursor: 'pointer' }}>Product Owners</Typography></Link>
             <Link href='/use-cases/project-managers'><Typography variant='body1' sx={{ cursor: 'pointer' }}>Project Managers</Typography></Link>
-            <Link href='/agencies'><Typography variant='body1' sx={{ cursor: 'pointer' }}>Agencies</Typography></Link>
+            {/* <Link href='/agencies'><Typography variant='body1' sx={{ cursor: 'pointer' }}>Agencies</Typography></Link> */}
           </Box>
         </Box>
         <Box
