@@ -7,6 +7,7 @@ import React from 'react';
 
 import ManagersImage from 'images/use-case/project-managers.jpg';
 import Head from 'next/head';
+import Feature from '../Feature';
 
 const Managers = () => {
     const theme = useTheme();
@@ -64,6 +65,9 @@ const Managers = () => {
                                     '& > span': {
                                         width: '100% !important',
                                         height: '100% !important'
+                                    },
+                                    '& > span > img': {
+                                        minWidth: 'fit-content !important'
                                     }
                                 }}
                             >
@@ -75,90 +79,30 @@ const Managers = () => {
                                 gap={theme.spacing(2)}
                                 width={{ xs: '100%', sm: '100%', md: '40%' }}
                             >
-                                <Box
-                                    display={'flex'}
-                                    gap={theme.spacing(0.5)}
-                                >
-                                    <CheckCircleIcon sx={{ color: theme.palette.success.main, mt: theme.spacing(0.25) }} />
-                                    <Box
-                                        display={'flex'}
-                                        flexDirection={'column'}
-                                        gap={theme.spacing(0.5)}
-                                    >
-                                        <Typography variant='subtile1' sx={{ fontWeight: 700 }}>Agile Development</Typography>
-                                        <Typography variant='caption'>Releasy is designed to support agile development methodologies, providing Project Managers with the flexibility and agility they need to succeed in today's fast-paced business environment.</Typography>
-                                    </Box>
-                                </Box>
-                                <Box
-                                    display={'flex'}
-                                    gap={theme.spacing(0.5)}
-                                >
-                                    <CheckCircleIcon sx={{ color: theme.palette.success.main, mt: theme.spacing(0.25) }} />
-                                    <Box
-                                        display={'flex'}
-                                        flexDirection={'column'}
-                                        gap={theme.spacing(0.5)}
-                                    >
-                                        <Typography variant='subtile1' sx={{ fontWeight: 700 }}>Improved Communication</Typography>
-                                        <Typography variant='caption'>Releasy facilitates communication among team members and stakeholders, enabling Project Managers to easily obtain feedback and provide updates.</Typography>
-                                    </Box>
-                                </Box>
-                                <Box
-                                    display={'flex'}
-                                    gap={theme.spacing(0.5)}
-                                >
-                                    <CheckCircleIcon sx={{ color: theme.palette.success.main, mt: theme.spacing(0.25) }} />
-                                    <Box
-                                        display={'flex'}
-                                        flexDirection={'column'}
-                                        gap={theme.spacing(0.5)}
-                                    >
-                                        <Typography variant='subtile1' sx={{ fontWeight: 700 }}>Risk Mitigation</Typography>
-                                        <Typography variant='caption'>Releasy can help Project Managers mitigate risks by identifying potential issues and addressing them before they become major problems.</Typography>
-                                    </Box>
-                                </Box>
-                                <Box
-                                    display={'flex'}
-                                    gap={theme.spacing(0.5)}
-                                >
-                                    <CheckCircleIcon sx={{ color: theme.palette.success.main, mt: theme.spacing(0.25) }} />
-                                    <Box
-                                        display={'flex'}
-                                        flexDirection={'column'}
-                                        gap={theme.spacing(0.5)}
-                                    >
-                                        <Typography variant='subtile1' sx={{ fontWeight: 700 }}>Increased Productivity</Typography>
-                                        <Typography variant='caption'>Releasy can help Project Managers increase productivity by identifying and resolving issues more quickly, enabling team members to focus on development tasks.</Typography>
-                                    </Box>
-                                </Box>
-                                <Box
-                                    display={'flex'}
-                                    gap={theme.spacing(0.5)}
-                                >
-                                    <CheckCircleIcon sx={{ color: theme.palette.success.main, mt: theme.spacing(0.25) }} />
-                                    <Box
-                                        display={'flex'}
-                                        flexDirection={'column'}
-                                        gap={theme.spacing(0.5)}
-                                    >
-                                        <Typography variant='subtile1' sx={{ fontWeight: 700 }}>Enhanced Customer Satisfaction</Typography>
-                                        <Typography variant='caption'>Releasy enables Project Managers to ensure that the product meets the needs and expectations of end-users, resulting in increased customer satisfaction and loyalty.</Typography>
-                                    </Box>
-                                </Box>
-                                <Box
-                                    display={'flex'}
-                                    gap={theme.spacing(0.5)}
-                                >
-                                    <CheckCircleIcon sx={{ color: theme.palette.success.main, mt: theme.spacing(0.25) }} />
-                                    <Box
-                                        display={'flex'}
-                                        flexDirection={'column'}
-                                        gap={theme.spacing(0.5)}
-                                    >
-                                        <Typography variant='subtile1' sx={{ fontWeight: 700 }}>Cost Savings</Typography>
-                                        <Typography variant='caption'>Releasy can help Project Managers save money by identifying and resolving issues earlier in the development process, reducing the need for costly fixes later on.</Typography>
-                                    </Box>
-                                </Box>
+                                <Feature
+                                    title={'Agile Development'}
+                                    description={"Releasy is designed to support agile development methodologies, providing Project Managers with the flexibility and agility they need to succeed in today's fast-paced business environment."}
+                                />
+                                <Feature
+                                    title={'Improved Communication'}
+                                    description={"Releasy facilitates communication among team members and stakeholders, enabling Project Managers to easily obtain feedback and provide updates."}
+                                />
+                                <Feature
+                                    title={'Risk Mitigation'}
+                                    description={"Releasy can help Project Managers mitigate risks by identifying potential issues and addressing them before they become major problems."}
+                                />
+                                <Feature
+                                    title={'Increased Productivity'}
+                                    description={"Releasy can help Project Managers increase productivity by identifying and resolving issues more quickly, enabling team members to focus on development tasks."}
+                                />
+                                <Feature
+                                    title={'Enhanced Customer Satisfaction'}
+                                    description={"Releasy enables Project Managers to ensure that the product meets the needs and expectations of end-users, resulting in increased customer satisfaction and loyalty."}
+                                />
+                                <Feature
+                                    title={'Cost Savings'}
+                                    description={"Cost Savings"}
+                                />
                             </Box>
                         </Box>
                     </Box>
